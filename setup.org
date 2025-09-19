@@ -1,0 +1,15 @@
+#+STARTUP: indent
+#+HTML_HEAD: <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+#+HTML_HEAD: <link rel="preconnect" href="https://fonts.googleapis.com">
+#+HTML_HEAD: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+#+HTML_HEAD: <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap&subset=cyrillic" rel="stylesheet">
+#+HTML_HEAD: <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../style.css?v=2" />
+#+HTML_HEAD: <script src="../../js/script.js?=2"></script>
+
+
+#+LANGUAGE: ru
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+OPTIONS: num:nil
+#+OPTIONS: toc:nil
+#+OPTIONS: html-postamble:nil

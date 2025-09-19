@@ -1,0 +1,28 @@
+# Ensure this file is recognized as an Apache configuration file
+<Files .htaccess>
+    Require all denied
+</Files>
+
+# Index file configuration
+DirectoryIndex index.html index.php
+
+# Allow all access
+<IfModule mod_authz_core.c>
+    Require all granted
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Allow from all
+</IfModule>
+
+# Deny access to sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh|tpl)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Optional: Disable directory browsing
+Options -Indexes
+
+# Optional: Set Custom Error Document
+ErrorDocument 403 /custom_403_page.html

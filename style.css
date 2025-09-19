@@ -1,0 +1,324 @@
+/* Базовые цвета Nord Dark */
+:root {
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+}
+
+
+
+/* Фон всей страницы и контейнера одинаковый */
+body,
+.content {
+  background-color: var(--nord0);
+  color: var(--nord4);
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', 'Open Sans', 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Контейнер статьи */
+#content {
+  max-width: 800px;
+  margin: 0 auto;   
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3.5rem 1.25rem;
+  background-color: var(--nord0);
+  border-radius: 16px;
+  box-shadow: 0 2px 24px 0 rgba(44, 51, 63, 0.12);
+  box-sizing: border-box;
+}
+
+
+/* Заголовки */
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: var(--nord6);
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.25;
+  margin-top: 2.2em;
+  margin-bottom: 0.7em;
+  letter-spacing: 0.02em;
+}
+
+.content h1 { font-size: 2.2rem; }
+.content h2 { font-size: 1.7rem; }
+.content h3 { font-size: 1.3rem; }
+.content h4 { font-size: 1.1rem; }
+.content h5 { font-size: 1rem; }
+.content h6 { font-size: 0.95rem; }
+
+/* Абзацы и списки */
+.content p,
+.content ul,
+.content ol {
+  margin-bottom: 1.3em;
+  margin-top: 0;
+  word-break: break-word;
+}
+
+.content ul,
+.content ol {
+  padding-left: 1.4em;
+}
+
+.content li {
+  margin-bottom: 0.5em;
+}
+
+/* Ссылки */
+.content a {
+  color: var(--nord8);
+  text-decoration: underline;
+  transition: color 0.2s;
+  word-break: break-all;
+}
+.content a:hover,
+.content a:focus {
+  color: var(--nord7);
+  text-decoration: none;
+}
+
+/* Картинки */
+.content img {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin: 1.5em auto;
+  box-shadow: 0 2px 12px 0 rgba(44, 51, 63, 0.15);
+}
+
+/* Блоки кода и pre */
+.content pre,
+.content code {
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  background: var(--nord2);
+  color: var(--nord13);
+  border-radius: 6px;
+}
+.content pre {
+  padding: 1em;
+  overflow-x: auto;
+  margin-bottom: 1.5em;
+}
+.content code {
+  padding: 0.15em 0.4em;
+  font-size: 0.98em;
+}
+
+/* Цитаты */
+.content blockquote {
+  border-left: 4px solid var(--nord10);
+  background: var(--nord1);
+  color: var(--nord5);
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* Таблицы */
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+  background: var(--nord1);
+}
+.content th,
+.content td {
+  border: 1px solid var(--nord3);
+  padding: 0.75em 1em;
+  text-align: left;
+  color: var(--nord4);
+}
+.content th {
+  background: var(--nord2);
+  color: var(--nord6);
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .content {
+    padding: 1.2rem 0.5rem 2rem 0.5rem;
+    font-size: 1rem;
+  }
+  .content h1 { font-size: 1.4rem; }
+  .content h2 { font-size: 1.2rem; }
+  .content h3 { font-size: 1.07rem; }
+}
+
+/* Улучшения для глаз */
+.content {
+  text-rendering: optimizeLegibility;
+  hyphens: auto;
+  word-break: normal;
+
+}
+
+.content .meta-info {
+  margin-top: -0.6em;
+  margin-bottom: 2em;
+  color: var(--nord5);
+  font-size: 0.97em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  opacity: 0.78;
+  font-family: inherit;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.content .meta-info span {
+  color: inherit;
+  font-size: inherit;
+  opacity: 1;
+  font-weight: 400;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+
+/* CSS for Footnote Panel */
+.fn-panel {
+  position: absolute;
+  background-color: var(--nord1);
+  color: var(--nord4);
+  padding: 16px 16px 10px 16px; /* Added additional top padding */
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  font-size: 0.98rem;
+  font-family: 'Nunito', 'Open Sans', 'Inter', 'Segoe UI', Arial, sans-serif;
+  display: none;
+  transition: all 0.18s;
+}
+
+.fn-panel a {
+  color: var(--nord8);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.fn-panel.visible {
+  display: block;
+}
+
+.fn-close {
+  font-size: 1.2em;
+  font-weight: 700;
+  cursor: pointer;
+  color: #888;
+  border: none;
+  background: transparent;
+  line-height: 1;
+  margin-left: auto;
+  position: absolute;
+  right: 16px; /* Adjusted to ensure more consistent spacing */
+  top: 16px; /* Adjusted with padding change */
+}
+
+@media (max-width: 600px) {
+  .fn-panel {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    max-width: 100vw;
+    border-radius: 0;
+    padding: 22px 14px 25px 14px;
+    box-shadow: 0 -2px 18px rgba(0,0,0,0.15);
+    font-size: 1rem;
+    top: auto;
+  }
+  .fn-close {
+    right: 32px; /* Put the button closer to the edge so it's always visible */
+    top: 16px;
+  }
+}
+
+
+
+.toc {
+  overflow-y: auto;
+}
+
+.toc > .toc-list {
+  overflow: hidden;
+  position: relative;
+}
+
+.toc > .toc-list li {
+  list-style: none;
+}
+
+.toc-list {
+  margin: 0;
+  padding-left: 10px;
+}
+
+a.toc-link {
+  height: 100%;
+}
+
+.is-collapsible {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.is-collapsed {
+  max-height: 0;
+}
+
+.is-position-fixed {
+  position: fixed !important;
+  top: 0;
+}
+
+.is-active-link {
+  font-weight: 700;
+}
+
+.toc-link::before {
+  content: " ";
+  display: inline-block;
+  height: inherit;
+  left: 0;
+  margin-top: -1px;
+  position: absolute;
+  width: 2px;
+}
+
+/*# sourceMappingURL=tocbot.css.map */
